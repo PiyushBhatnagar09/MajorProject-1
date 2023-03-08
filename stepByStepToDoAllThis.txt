@@ -71,3 +71,11 @@ create routes/index.js
 codeial/index.js -> routes/index.js -> all  other routes
 */
 
+Now, we have 2 index.js files, users.js, home_controller.js, users_controller.js and we have written code inside it to make routers and controllers
+
+/* concept :-
+for any request coming after localhost:8000/, .routes router will be used
+further any request, goes to '/' i.e. home_controller and any request to users goes to './users' i.e. users.js inside which for /profile, we used users_controller
+*/
+
+Now, we will use ejs i.e. our view engine
