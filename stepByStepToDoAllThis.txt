@@ -1,0 +1,63 @@
+**STEP-BY-STEP, what we have done in this Major Project**
+
+use "cd .." to go one folder back
+use "cd ./codeial" to go inside codeial folder
+write 'npm init'
+Now, write necessary information otherwise press enter, so that default values will be taken
+"Now package.json" file will appear in tthe codeial folder
+
+to clear terminal use, ctrl + k
+
+now to make a new directory, use "mkdir routes"
+then create other folder also with name :- "controllers, views, models, config" using the above syntax !!
+
+/* JUST FOR INFO
+routes : stores all destinations from browser, i.e. stores /home, /profile, etc
+controllers : when above links are called i.e. when /home or /profile are called then which controller will be called and what actions will be taken, all those controllers are stored in this folder
+views : stores the html, ejs files
+models : stores all schemas
+config : holds all the configurations, mongodb settings will be stored in this folder
+*/
+
+npm install express
+Now, express is added to the package.json and a new file called package-lock.json also appears which contains all dependencies that express requires
+Also, node_modules folder appears
+
+Now, we start writing in index.js :-
+/*
+const express= require('express');
+const app= express();
+const port= 8000;
+
+app.listen(port, function(err) {
+    if(err) {
+        console.log(`Error in running the server : ${err}`);
+    }
+    console.log(`Server is running on port: ${port}`);
+})
+*/
+
+Now, to run server, we use "nodemon index.js"
+
+But instead of always writing "nodemon index.js", we can create a shortcut by going to package.json and inside "script", put a new line as, follows :-
+/*
+"scripts": {
+    "start": "nodemon index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+},
+*/
+Now, we can use "npm start" to start our server
+
+Now, initialising our git repository for this project :-
+write:-
+git init
+
+git remote add origin git@github.com:PiyushBhatnagar09/MajorProject-1.git
+/* we got the above link git@..... by creating a new repository on github*/
+
+git status
+/*it will show all the files we have and there we can see there is node_modules file also
+node_modules is a heavy folder and we don't want it to go to our github repository, so :-*/
+
+create .gitignore in the codeial folder
+write "node_modules/" inside that file and then do "git status", now you can see there is no node_modules
