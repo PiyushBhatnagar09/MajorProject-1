@@ -61,3 +61,13 @@ node_modules is a heavy folder and we don't want it to go to our github reposito
 
 create .gitignore in the codeial folder
 write "node_modules/" inside that file and then do "git status", now you can see there is no node_modules
+
+git add .
+git commit -m "First commit: create the directory structure and setup express server"
+git log
+
+create routes/index.js
+/* LOGIC :-
+codeial/index.js -> routes/index.js -> all  other routes
+*/
+
