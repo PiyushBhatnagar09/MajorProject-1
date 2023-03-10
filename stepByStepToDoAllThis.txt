@@ -1,4 +1,6 @@
 **STEP-BY-STEP, what we have done in this Major Project**
+About: steps to do all work done inside codeial folder and adding all the work time to time on github using vs code !!
+
 
 use "cd .." to go one folder back
 use "cd ./codeial" to go inside codeial folder
@@ -79,3 +81,29 @@ further any request, goes to '/' i.e. home_controller and any request to users g
 */
 
 Now, we will use ejs i.e. our view engine
+
+Now, we pushed the work we have done to github :-
+git add .
+git commit -m "Adding work to github"
+git push origin master
+
+Now, use "npm install ejs"
+Now, create views/home.ejs
+
+Learnt how to make partials
+
+npm install express-ejs-layouts
+
+Now, linking mongoDb using mongoose
+npm install mongoose
+create mongoose.js in config folder
+
+npm install cookie-parser
+
+check cookies:-
+inspect->application->cookies
+
+just to check:
+inside cookies, select localhost and then:
+name: user_id
+value: 11
